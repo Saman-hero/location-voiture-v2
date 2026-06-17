@@ -7,6 +7,7 @@ if (!isset($_SESSION['user']))
 
 if (time() - $_SESSION['LAT'] > $ttl)
     header('location:disconnect.php');
+// pour écrase LAT avec time() après chaque action.
 else
     $_SESSION['LAT'] = time();
 ?>
