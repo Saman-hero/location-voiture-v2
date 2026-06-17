@@ -44,11 +44,11 @@
             <div class="form-row">
                 <div class="form-group">
                     <label class="required">Prénom</label>
-                    <input type="text" name="prenom" required placeholder="Jean" maxlength="100">
+                    <input type="text" name="prenom" required placeholder="Prénom" maxlength="100">
                 </div>
                 <div class="form-group">
                     <label class="required">Nom</label>
-                    <input type="text" name="nom" required placeholder="Dupont" maxlength="100">
+                    <input type="text" name="nom" required placeholder="Nom" maxlength="100">
                 </div>
             </div>
             <div class="form-group">
