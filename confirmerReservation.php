@@ -30,6 +30,10 @@ foreach ($_SESSION['reservation'] as $item) {
     $query = "insert into details_reservation values ($idReservation, $idVoiture, '$date_debut', '$date_fin', $nb_jours)";
     mysqli_query($connection, $query);
     trace($query);
+
+    $query = "update voitures set disponible = 0 where id = $idVoiture";
+    mysqli_query($connection, $query);
+    trace($query);
 }
 
 $_SESSION['reservation'] = [];
